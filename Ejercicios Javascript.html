@@ -1,0 +1,20 @@
+<form name="conversion">
+    <table bgcolor="white"><tr><td><center><h2> Conversor de moneda </h2></center>
+	<center><h2>Dólares a convertir: <input type="text" name="Dolar"> </h2>
+	<h2>Sería un total de: <input type="text" name="pesos"> pesos. </h2>
+	<input type="button" value="convertir" onclick="calcular()"></center>
+	</td></tr></table>
+	</form>
+ 
+	<script>
+	src="Escritorio/cuenta.js"
+    
+    function calcular()
+	{
+	var dol = (document.conversion.Dolar.value)*1;
+	var tot = dol * 24.25;
+	tot = tot.toFixed(2);
+	document.conversion.pesos.value = tot;
+ 
+	}
+	</script>
